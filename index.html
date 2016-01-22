@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#NavBar" class="navbar-toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand"> <i class="fa fa-fire fa-fw"></i>
+          <span>freeCodeCamp</span>
+        </div>
+      </div>
+      <div id="NavBar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a target="_blank" href="https://github.com/Ebsy"><i class="fa fa-github fa-fw"></i><span>GitHub</span></a></li>
+          <li><a target="_blank" href="http://www.facebook.com/neilebrey"><i class="fa fa-facebook-square fa-fw"></i><span>Facebook</span></a></li>
+          <li><a target="_blank" href="mailto:neil.ebrey@gmail.com"><i class="fa fa-google fa-fw"></i><span>Email</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center">
+    <h1>Pomodoro Clock</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <p>Break Length</p>
+        <div class="inputs">
+          <i id="breakMinus" class="fa fa-minus fa-fw"></i>
+          <span id="breakLength">03</span>
+          <i id="breakPlus" class="fa fa-plus fa-fw"></i>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="circle"></div>
+        <!-- <span style="text-size:8px;">Click to start/stop</span> -->
+        <div id="timeLeft">
+          <span id="m">00</span>
+          <span id="s">00</span>
+        </div>
+        <div id="controls"><i id="start" class="fa fa-play fa-4x fa-fw"></i></div>
+      </div>
+
+      <div class="col-md-4">
+        <p>Session Length</p>
+        <div class="inputs">
+          <i id="sessionMinus" class="fa fa-minus fa-fw"></i>
+          <span id="sessionTime">25</span>
+          <i id="sessionPlus" class="fa fa-plus fa-fw"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.1.3/circle-progress.min.js" charset="utf-8"></script>
+  <script src="site.js"></script>
+
+</body>
+
+
+</html>

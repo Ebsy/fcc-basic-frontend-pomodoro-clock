@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+@import url(https://fonts.googleapis.com/css?family=Coda);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+body {
+  padding-top: 60px;
+  font-family: Coda;
+  /*background-image: url(http://rpgvienna.com/fcc/quote-generator/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;*/
+}
+#circle {
+  z-index: 5;
+}
+#controls {
+  margin-top: 60px;
+  cursor: pointer;
+}
+#breakMinus, #breakPlus, #sessionMinus, #sessionPlus {
+  cursor: pointer;
+}
+#breakLength, #sessionLength {
+  font-family: 'Roboto Mono'
+}
+.inputs {
+  font-size: 24px;
+}
+#timeLeft {
+  margin-top: -190px;
+  margin-bottom: 150px;
+  font-family: 'Roboto Mono';
+  font-size: 40px;
+  z-index: 3;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
