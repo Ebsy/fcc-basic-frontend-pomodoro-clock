@@ -16,12 +16,6 @@ console.log(initialTimePercent)
 var currentPercent;
 
 $(document).ready(function() {
-
-
-
-
-
-
   $('#breakPlus').click(function() {
 
     if (breakTime > 29) {
@@ -85,7 +79,6 @@ $(document).ready(function() {
       //clockStarted = false;
       $('#start').removeClass('fa-pause').addClass('fa-play');
 
-
       clearInterval(startClock)
       startClock = false;
     } else {
@@ -94,7 +87,7 @@ $(document).ready(function() {
       //console.log(initialTimePercent)
       startClock = setInterval(function() {
         calcSeconds()
-      }, 100);
+      }, 1000);
 
     }
   })
